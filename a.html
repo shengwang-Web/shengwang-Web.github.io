@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Load Text File</title>
+</head>
+<body>
+
+<div id="content"></div>
+
+<script>
+    fetch('./jw工具/jw压缩/geshi.txt') // 假设somefile.txt与当前HTML文件在同一目录下
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('content').innerHTML = data;
+        })
+        .catch(error => console.error('Error:', error));
+</script>
+
+</body>
+</html>
