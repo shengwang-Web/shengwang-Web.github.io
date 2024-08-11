@@ -9,7 +9,7 @@
 <div id="content"></div>
 
 <script>
-    fetch('./All_articles/geshi.txt') // 假设somefile.txt与当前HTML文件在同一目录下
+    fetch('./All_articles/a.txt') // 假设somefile.txt与当前HTML文件在同一目录下
         .then(response => response.text())
         .then(data => {
             document.getElementById('content').innerHTML = data;
